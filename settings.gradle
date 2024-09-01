@@ -1,1 +1,5 @@
 include 'demo-echo'
+include 'demo-event'
+include 'demo-watcher'
+include 'demo-kafka'
+
