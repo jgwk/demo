@@ -14,6 +14,5 @@ public class TestProducer {
 
     public void produceTestHello(String message) {
         kafkaTemplate.send("test-hello", message);
-        log.info("produce test-hello: " + message);
     }
 }

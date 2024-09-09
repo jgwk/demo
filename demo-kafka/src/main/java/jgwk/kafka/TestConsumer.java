@@ -8,8 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class TestConsumer {
 
-    @KafkaListener(topics = "test-hello", groupId = "test")
-    public void consumeTestHello(String message) {
-        log.info("consume test-hello: " + message);
+    @KafkaListener(topics = "test-hello")
+    public void consumeTestHello1(String message) {
+        log.info("consume test-hello1: " + message);
+    }
+
+
+    @KafkaListener(topics = "test-hello")
+    public void consumeTestHello2(String message) {
+        log.info("consume test-hello2: " + message);
     }
 }
