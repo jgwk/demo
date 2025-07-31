@@ -1,7 +1,7 @@
 allprojects {
     ext {
         lombokVersion = '1.18.20'
-        bootVersion = '2.7.18'
+        bootVersion = '3.5.4'
         guavaVersion = '33.2.0-jre'
 
         assertjVersion = '3.23.1'
